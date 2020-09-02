@@ -1,0 +1,8 @@
+* {margin:0;padding:0;box-sizing: border-box;}
+
+:root {
+    --light-blue: #75D1FF;
+    --dark-blue: #3B4C5C;
+    --black: #262F38;
+    --green: #8BCE7B;
+}
