@@ -1,0 +1,19 @@
+.anmeldelse{
+    padding: 5vh;
+    background: #272c43;
+    color: white;
+    text-align: center;
+}
+
+.anmeldelse h1{
+    font-size: 12vw;
+}
+
+.anmeldelse h2{
+    font-size: 7vw;
+    margin-bottom: 20px;
+}
+
+.anmeldelse p{
+    font-size: 5vw;
+}
