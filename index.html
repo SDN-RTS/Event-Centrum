@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Centrum</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/6e489ebad2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-
     <footer>
         <section class="contact_us">
             <article class="contact_us_inside">
@@ -55,13 +54,13 @@
 
         <section class="write_to_us">
             <h1></h1>
-            <form id="kontakt" action="">
+            <form id="kontakt" action="#">
                 <h1>Send os et par linjer</h1>
-                <input type="text" name="name" id="" placeholder="Skriv dit navn her">
-                <input type="email" name="email" id="" placeholder="Skriv din email her">
+                <input type="text" name="name" id="name" placeholder="Skriv dit navn her" required>
+                <input type="email" name="email" id="name" placeholder="Skriv din email her" required>
                 <textarea class="footerTextarea" name="message" maxlength="250"
-                    placeholder="Skriv din besked her"></textarea>
-                <button class="submitButton" type="submit">
+                    placeholder="Skriv din besked her" required></textarea>
+                <button class="submitButton" type="submit" id="submit">
                     <svg class="footerSubmitButtonSvg" viewBox="0 0 24 24">
                         <path
                             d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z">
@@ -70,12 +69,11 @@
                     <p>Send</p>
                 </button>
             </form>
-
         </section>
 
 
     </footer>
-    <script src="./script.js"></script>
+    <script src="./script.js" type="module"></script>
 </body>
 
 </html>

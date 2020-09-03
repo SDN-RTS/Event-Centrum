@@ -1,0 +1,143 @@
+
+.slider {
+    height: 90vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-position: -700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titles {
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.377);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.topTitle {
+    font-size: 1.5em;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+
+.mainTitle {
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.slider button {
+    display: none;
+}
+
+.visual-divider {
+    width: 110px;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.418);
+    border-radius: 40px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.sliderDescription {
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.sliderReadMore {
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 25px 30px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 25px;
+    border: 3px solid #fff;
+    margin-top: 50px;
+}
+
+.sliderReadMore:hover {
+    background-color: rgba(102, 102, 102, 0.671);
+}
+
+.imageCounter {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+}
+
+.imageCount {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.countColor {
+    background-color: #fff;
+}
+
+@media only screen and (min-width: 600px) {
+    .slider {
+        background-position: center;
+    }
+
+    .slider button {
+        display: initial;
+        height: 80px;
+        width: 60px;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 80px;    
+        cursor: pointer;
+    }
+
+    .slider button:hover {
+        opacity: 0.8;
+    }
+
+    .prevBtn {
+        position: absolute;
+        left: 10px;
+    }
+
+    .nextBtn {
+        position: absolute;
+        right: 10px;
+    }
+
+    .titles {
+        background-color: initial;
+    }
+
+    .topTitle {
+        font-size: 2.5em;
+    }
+
+    .mainTitle {
+        font-size: 3em;
+    }
+
+    .sliderDescription {
+        width: 70%;
+        font-size: 1.5em;
+        margin: 0 auto;
+    }
+}

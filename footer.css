@@ -182,5 +182,37 @@ footer{
 }
 
     
+
+.submitButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color:  #415669;
+    box-shadow: none;
+    
+    color: white;
+    font-size: 18px;
+    
+    cursor: pointer;
 }
 
+.submitButton:hover {
+    opacity: 0.5;
+}
+
+.footerSubmitButtonSvg{
+    fill:  white;
+    width: 2em;
+    height: auto;
+}
+
+}
+
+.formError {
+    background-color: rgb(53, 0, 0) !important;
+    border: 1px solid red !important;
+}
