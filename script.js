@@ -1,3 +1,3 @@
 
-import slider from './slider.js';
-slider();
+import formValidator from './form-validation.js';
+formValidator(document.querySelector('form'));
