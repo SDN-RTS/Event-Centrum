@@ -1,0 +1,154 @@
+.festArrangamenter{
+    text-align: center;
+    margin: 20px;
+    font-size: 2em;
+}
+.fest{
+    padding: 0 2vw;
+    padding-bottom:20px ;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap: 30px;
+}
+
+.festTilbud{
+    width: 100%;
+    border: #75D1FF solid 2px;
+    border-radius: 20px;
+    overflow: hidden;
+    /* height: 65vh; */
+    /* border: red 1px solid; */
+}
+
+.teambuilding{
+    height: 200px;
+    text-align: center;
+    padding-top: 80px;
+    color: white;
+    font-size: 2em;
+    background-image: url("./images/Teambuilding.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+}
+
+.wildLife{
+    height: 200px;
+    text-align: center;
+    padding-top: 80px;
+    color: white;
+    font-size: 2em;
+    background-image: url("./images/slider/slider2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.sherlock{
+    height: 200px;
+    text-align: center;
+    padding-top: 80px;
+    color: white;
+    font-size: 2em;
+    background-image: url("./images/sherlock.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.vikingeFest{
+    height: 200px;
+    text-align: center;
+    padding-top: 80px;
+    color: white;
+    font-size: 2em;
+    background-image: url("./images/viking.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.jamesBond{
+    height: 200px;
+    text-align: center;
+    padding-top: 80px;
+    color: white;
+    font-size: 2em;
+    background-image: url("./images/james.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.juleFrokost{
+    height: 200px;
+    text-align: center;
+    padding-top: 80px;
+    color: white;
+    font-size: 2em;
+    background-image: url("./images/julefrokost.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.casino{
+    height: 200px;
+    text-align: center;
+    padding-top: 80px;
+    color: white;
+    font-size: 2em;
+    background-image: url("./images/casino.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.stedDeltager{
+    display: flex;
+    /* border: red solid 1px; */
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+
+}
+
+.stedDeltager article:first-child{
+    margin-right:70px;
+    margin-left:10px;
+    /* margin-bottom: 40px; */
+    /* border: red solid 1px; */
+}
+
+.stedDeltager article p:first-child{
+    color: rgba(0, 0, 0, 0.507);
+    margin-bottom: 3px;
+}
+
+
+.prisTid{
+    display: flex;
+    border-top: rgba(0, 0, 0, 0.356) dashed 1px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+}
+
+.prisTid article:first-child{
+    margin-right:110px;
+    margin-left:10px;
+
+    /* border: red solid 1px; */
+}
+
+.prisTid article p:first-child{
+    color: rgba(0, 0, 0, 0.507);
+    margin-bottom: 3px;
+}
+
+.description{
+    height: 80px;
+    padding-left: 10px;
+    font-weight: bolder;
+}
