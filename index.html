@@ -5,18 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Centrum</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./anmeldelser.css">
+    <script src="https://kit.fontawesome.com/6e489ebad2.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header class="mainHeader">
+        <a class="logoWrapper" href="#"><img src="images/logos/Event Centrum Logo.png" alt="logo" class="logo"></a>
+        <input type="checkbox" name="check" id="check">
+        <label class="burger-menu" for="check">
+            <i id="burger-icon" class="fas fa-bars"></i>
+        </label>
+        <nav class="navigation">
+            <ul class="navigation-list">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="fester.html">Fester</a></li>
+                <li><a href="aabnefester.html">Åbne fester</a></li>
+                <li><a href="#om">Om Event-centrum</a></li>
+                <li><a href="#anmeldelse">Hvad mener folk?</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="slider">
+        <article class="sliderContent">
+            <section class="titles">
+                <p class="topTitle"></p>
+                <p class="mainTitle"></p>
+            </section>
+            <div class="visual-divider"></div>
+            <section>
+                <p class="sliderDescription"></p>
+            </section>
+        </article>
 
+        <button class="prevBtn">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="nextBtn">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <section class="imageCounter">
+            <div class="imageCount"></div>
+            <div class="imageCount"></div>
+            <div class="imageCount"></div>
+        </section>
+
+        <a class="sliderReadMore" href="#">Læs mere</a>
+    </section>
+  
     <article id="anmeldelse" class="anmeldelse">
         <h1>5000+</h1>
         <h2>Kunder har bedømt vores arrangementer</h2>
         <img src="./images/stars.PNG" alt="rating stars">
         <p> 4.4 ud af 5</p>
     </article>
-
     
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 </html>
