@@ -42,14 +42,6 @@ function slider() {
     imageCount[i].classList.add('countColor');
     /* #endregion */
 
-    document.querySelector('.prevBtn').addEventListener('click', function(){
-        i--;
-    })
-
-    document.querySelector('.nextBtn').addEventListener('click', function(){
-        i++;
-    })
-
     setInterval(() => {
         if (i > sliderImages.length - 2) {
             i = 0;
@@ -67,6 +59,40 @@ function slider() {
         }
         imageCount[i].classList.add('countColor');
     }, 3000);
+
+     document.querySelector('.nextBtn').addEventListener('click', function(){
+         i++
+        if (i > sliderImages.length - 1) {
+            i = 0;
+        }
+        document.querySelector('.slider').style.backgroundImage = 'url(' + sliderImages[i] + ')';
+        document.querySelector('.topTitle').innerText = topTitles[i];
+        document.querySelector('.mainTitle').innerText = mainTitles[i];
+        document.querySelector('.sliderDescription').innerText = description[i];
+
+        // mini icon update
+        for (let f = 0; f < imageCount.length; f++) {
+            imageCount[f].classList.remove('countColor');
+        }
+        imageCount[i].classList.add('countColor');
+    })
+
+    document.querySelector('.prevBtn').addEventListener('click', function(){
+        i--;
+        if (i < 0) {
+            i = sliderImages.length - 1;
+        }
+        document.querySelector('.slider').style.backgroundImage = 'url(' + sliderImages[i] + ')';
+        document.querySelector('.topTitle').innerText = topTitles[i];
+        document.querySelector('.mainTitle').innerText = mainTitles[i];
+        document.querySelector('.sliderDescription').innerText = description[i];
+
+        // mini icon update
+        for (let f = 0; f < imageCount.length; f++) {
+            imageCount[f].classList.remove('countColor');
+        }
+        imageCount[i].classList.add('countColor');
+    })
 
 };
 
