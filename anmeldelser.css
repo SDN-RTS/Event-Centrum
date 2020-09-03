@@ -17,3 +17,16 @@
 .anmeldelse p{
     font-size: 5vw;
 }
+
+@media only screen and (min-width: 800px) {
+    .anmeldelse h1 {
+        font-size: 80px;
+    }
+    
+    .anmeldelse h2 {
+        font-size: 40px;
+    }
+    
+    .anmeldelse p {
+        font-size: 40px;
+}
