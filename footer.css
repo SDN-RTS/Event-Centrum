@@ -314,11 +314,9 @@ color: white;
     height: auto;
 }
 
-.formError {
-    background-color: red;
-}
 }
 
 .formError {
-    background-color: red;
+    background-color: rgb(53, 0, 0) !important;
+    border: 1px solid red !important;
 }
