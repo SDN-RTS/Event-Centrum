@@ -1,6 +1,6 @@
 .anmeldelse{
     padding: 5vh;
-    background: #272c43;
+    background: var(--dark-blue);
     color: white;
     text-align: center;
 }
