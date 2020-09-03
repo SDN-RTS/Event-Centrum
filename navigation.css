@@ -1,0 +1,121 @@
+.mainHeader{
+    background-color: var(--dark-blue);
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 0 20px;
+    align-items: center;
+}
+#burger-icon{
+    color: white;
+    font-size: 24px;
+}
+.label-icon{
+    fill: white;
+}
+.burger-menu{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.logoWrapper{
+    display: flex;
+    align-items: center;
+}
+#check{
+    display: none;
+}
+#check:checked ~ .navigation{
+    height: 420px;
+}
+.navigation{
+    transition: .5s;
+    display: flex;  
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    z-index: 999;
+}
+.navigation-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.navigation-list a {
+    color: black;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+}
+.logo{
+    height: 25px;
+}
+.navigation-list li{
+    border-bottom: black solid 2px;
+    background-color: var(--dark-blue);
+    height: 50px;
+    width: 100%;
+}
+.navigation-list li:first-child{
+    border-top: 2px solid black;
+}
+
+@media screen and (min-width: 700px){
+    .logo{
+        height: 30px;
+    }
+    .mainHeader{
+        padding: 0 40px;
+    }
+    #burger-icon{
+        font-size: 35px;
+    }
+    .navigation-list li{
+        height: 70px;
+    }
+}
+@media screen and (min-width: 1100px){
+    .burger-menu{
+        display: none;
+    }
+    .navigation-list li:first-child{
+        border-top: 0;
+    }
+    .navigation-list li:last-child{
+        margin: 0;
+    }
+    .navigation{
+        position: unset;
+        height: auto;
+        flex-direction: row;
+    }
+    .navigation-list{
+        flex-direction: row;
+    }
+    .navigation-list li{
+        border: 0;
+        height: auto;
+        width: auto;
+        margin-right: 30px;
+    }
+    .navigation-list a{
+        font-size: 20px;
+
+    }
+}
